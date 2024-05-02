@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Draw a point (1)</title>
+  </head>
+  <style>
+    input:focus {
+      outline: none;
+    }
+    #colorDisplay {
+      margin-bottom: 10px;
+      width: 100px;
+      height: 100px;
+      border: 1px solid #000;
+    }
+    img {
+      height: 200px;
+      width: 200px;
+    }
+    #bottomSpace {
+      height: 20vh;
+      width: 100vw;
+      background-color: white;
+    }
+  </style>
+  <body onload="main()">
+    <div>
+      <h2>Anthony Duong</h2>
+      <h2>ankaduon@ucsc.edu</h2>
+      <h2>
+        Notes to graders: 
+      </h2>
+    </div>
+    <canvas id="asg2" width="500" height="500">
+      Please use the browser supporting "canvas".
+    </canvas>
+    <div>
+      speed indicator:
+      <p id="fps"></p>
+      <div>Animation :</div>
+      <button id="On">ON</button>
+      <button id="Off">Off</button>
+    </div>
+
+    <div style="display: flex">
+      <div>
+        Camera Angle<input
+          type="range"
+          min="-180"
+          max="180"
+          value="70"
+          class="slider"
+          id="angleSlide"
+        />
+      </div>
+      <div>
+        shoulder Joint slide<input
+          type="range"
+          min="0"
+          max="45"
+          value="0"
+          class="slider"
+          id="shoulderJoint"
+        />
+      </div>
+      <div>
+        elbow slider
+        <input
+          type="range"
+          min="-12.5"
+          max="12.5"
+          value="0"
+          class="slider"
+          id="elbowJoint"
+        />
+      </div>
+      <div>
+        fin slider
+        <input
+          type="range"
+          min="-12.5"
+          max="12.5"
+          value="0"
+          class="slider"
+          id="finJoint"
+        />
+      </div>
+    </div>
+    <div id="bottomSpace"></div>
+    <!-- javascript files containing functions for WebGL -->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="./Triangle.js"></script>
+    <script src="./Square.js"></script>
+    <script src="./Circle.js"></script>
+    <script src="./Cube.js"></script>
+    <script src="./asg3.js"></script>
+  </body>
+</html>
