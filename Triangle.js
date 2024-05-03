@@ -79,6 +79,7 @@ function drawTriangle3D(vertices) {
 
   gl.drawArrays(gl.TRIANGLES, 0, n);
 }
+
 function drawTriangle3DUV(vertices, uv) {
   var n = 3; // The number of vertices
   var vertexBuffer = gl.createBuffer();
@@ -104,7 +105,6 @@ function drawTriangle3DUV(vertices, uv) {
 
   // Create a buffer object
   var uvBuffer = gl.createBuffer();
-
   //create a buffer object
   if (!uvBuffer) {
     console.log("Failed to create the buffer object");
