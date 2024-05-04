@@ -25,6 +25,16 @@
     }
   </style>
   <body onload="main()">
+    <div>
+      <h2>Anthony Duong</h2>
+      <h2>ankaduon@ucsc.edu</h2>
+      <h2>
+        Notes to graders: When user hits W, call camera.moveForward()<br />When
+        user hits S, call camera.moveBackwards() <br />When user hits A, call
+        camera.moveLeft() <br />When user hits Q call camera.panLeft()
+        <br />When user hits E call camera.panRight()
+      </h2>
+    </div>
     <canvas id="asg2" width="400" height="400">
       Please use the browser supporting "canvas".
     </canvas>
@@ -41,9 +51,9 @@
       <div>
         Camera Angle<input
           type="range"
-          min="0"
-          max="90"
-          value="5"
+          min="-360"
+          max="360"
+          value="0"
           class="slider"
           id="angleSlide"
         />
@@ -76,11 +86,13 @@
     <script src="lib/webgl-utils.js"></script>
     <script src="lib/webgl-debug.js"></script>
     <script src="lib/cuon-utils.js"></script>
-    <script src="lib/cuon-matrix.js"></script>
+    <!-- <script src="lib/cuon-matrix.js"></script> -->
+    <script src="lib/cuon-matrix-cse160.js"></script>
     <script src="./Triangle.js"></script>
     <script src="./Square.js"></script>
     <script src="./Circle.js"></script>
     <script src="./Cube.js"></script>
     <script src="./asg2.js"></script>
+    <script src="./Camera.js"></script>
   </body>
 </html>
