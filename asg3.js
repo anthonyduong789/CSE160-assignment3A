@@ -332,20 +332,6 @@ function addActionsForHtmlUI() {
       // renderAllShapes();
       renderScene();
     });
-  document
-    .getElementById("yellowSlide")
-    .addEventListener("mousemove", function () {
-      g_yellowAngle = this.value;
-      // renderAllShapes();
-      renderScene();
-    });
-  document
-    .getElementById("purpleSlide")
-    .addEventListener("mousemove", function () {
-      g_purpleAngle = this.value;
-      // renderAllShapes();
-      renderScene();
-    });
   document.getElementById("On").addEventListener("click", function () {
     g_yellowAnimation = true;
     tick();
