@@ -492,6 +492,7 @@ function drawPenguin() {
   feet2.matrix = feetStartingPosition2;
   feet2.matrix.translate(0.352735, 0, -0.25);
   feet2.matrix.scale(0.303125, feetYlength, 0.264844);
+  feet2.textureNum = -2;
   feet2.render();
   //end
 
@@ -502,6 +503,7 @@ function drawPenguin() {
   whiteBelly.matrix.translate(centerBelly, 0.325469 + bodyXandZ / 2, -1);
 
   whiteBelly.color = [1, 1, 1, 1];
+  whiteBelly.textureNum = -3;
   whiteBelly.render();
 
   // NOTE: leftArm
